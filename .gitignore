@@ -1,0 +1,4 @@
+.vagrant
+.key
+.pub
+**tmp*.cnf
