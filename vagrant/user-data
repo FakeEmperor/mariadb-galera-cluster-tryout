@@ -7,6 +7,7 @@ coreos:
     initial-advertise-peer-urls: http://$private_ipv4:2380
     listen-client-urls: http://0.0.0.0:2379,http://0.0.0.0:4001
     listen-peer-urls: http://$private_ipv4:2380,http://$private_ipv4:7001
+    discovery: https://discovery.etcd.io/d4fb3f70700da8f271a0de6785ddc3d0
   fleet:
     public-ip: "$public_ipv4"
   flannel:
@@ -40,6 +41,6 @@ coreos:
 users:
 - name: core
   ssh_authorized_keys:
-  - <your public key here>
+  - "<your public key here>"
 ssh_authorized_keys:
-- <your public key here>
+- "<your public key here>"

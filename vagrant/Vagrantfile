@@ -56,7 +56,7 @@ end
 Vagrant.configure("2") do |config|
   # config.ssh.private_key_path = 'mariadb-coreos.key'
   # always use Vagrants insecure key
-  config.ssh.insert_key = false
+  config.ssh.insert_key = true
   # forward ssh agent to easily ssh into the different machines
   config.ssh.forward_agent = true
 
